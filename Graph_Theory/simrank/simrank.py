@@ -21,12 +21,12 @@ for log in logs_tuple:
     q_i = queries.index(query)
     a_j = ads.index(ad)
     graph[q_i,a_j] +=1
-print(graph)
+#print(graph)
 
 query_sim = matrix(np.identity(len(queries)))
-print(query_sim)
+#print(query_sim)
 ad_sim = matrix(np.identity(len(ads)))
-print(ad_sim)
+#print(ad_sim)
 
 def get_ads_num(query):
     q_i = queries.index(query)
